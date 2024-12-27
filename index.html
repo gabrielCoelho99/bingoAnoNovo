@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bingo da Felicidade</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Bingo da Felicidade</h1>
+    <div class="user-section">
+        <label for="userNameInput">Digite seu nome:</label>
+        <input type="text" id="userNameInput" placeholder="Seu nome">
+        <button id="startGame">Iniciar Jogo</button>
+    </div>
+    
+    <div id="userNameDisplay"></div>
+    
+
+    <div class="words-container">
+        <div class="word">Paz</div>
+        <div class="word">Felicidade</div>
+        <div class="word">Amor</div>
+        <div class="word">Alegria</div>
+        <div class="word">Fé</div>
+        <div class="word">Saúde</div>
+        <div class="word">Esperança</div>
+        <div class="word">Afeto</div>
+        <div class="word">Harmonia</div>
+        <div class="word">Sorte</div>
+        <div class="word">Prosperidade</div>
+        <div class="word">Sucesso</div>
+        <div class="word">Carinho</div>
+        <div class="word">Amizade</div>
+        <div class="word">Coragem</div>
+        <div class="word">Sabedoria</div>
+        <div class="word">Força</div>
+        <div class="word">Bondade</div>
+        <div class="word">Otimismo</div>
+        <div class="word">Sinceridade</div>
+        <div class="word">Justiça</div>
+        <div class="word">Fraternidade</div>
+        <div class="word">Inteligência</div>
+        <div class="word">Disponibilidade</div>
+        <div class="word">Caridade</div>
+        <div class="word">Fidelidade</div>
+        <div class="word">Dignidade</div>
+        <div class="word">Responsabilidade</div>
+        <div class="word">Tolerância</div>
+        <div class="word">Solidariedade</div>
+        <div class="word">Perseverança</div>
+        <div class="word">Respeito</div>
+        <div class="word">Compreensão</div>
+        <div class="word">Oração</div>
+        <div class="word">Vitória</div>
+        <div class="word">Perdão</div>
+        <div class="word">Espiritualidade</div>
+        <div class="word">Diálogo</div>
+        <div class="word">Confiança</div>
+        <div class="word">Partilha</div>
+        <div class="word">Comunhão</div>
+        <div class="word">Unidade</div>
+    </div>
+
+    <div class="game-section">
+        <h2>Sua Tabela</h2>
+        <table class="bingo-table">
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+        <div class="buttons-container">
+            <!-- <button id="removeWord">Remover Palavra</button> -->
+            <button id="confirmSelection">Confirmar Escolhas</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
