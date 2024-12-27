@@ -95,3 +95,41 @@ button:hover {
     color: #555;
     display: none; /* Inicialmente escondido */
 }
+
+
+.bingo-table td {
+    width: 120px;
+    height: 120px;
+    border: 2px solid #ccc;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 18px;
+    background-color: #fff;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.bingo-table td.marked {
+    background-color: #90ee90;
+    color: #333;
+    font-weight: bold;
+    position: relative;
+}
+
+.bingo-table td.marked::after {
+    content: '✓';
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 14px;
+    color: #008000;
+}
+
+.bingo-table td:hover {
+    background-color: #f0f0f0;
+}
+
+.bingo-table td.marked:hover {
+    background-color: #7dcd7d;
+}
