@@ -64,9 +64,19 @@ bingoTable.addEventListener('click', (event) => {
 function checkWin() {
     const cells = Array.from(bingoTable.querySelectorAll('td'));
     if (cells.every(cell => cell.classList.contains('marked'))) {
-        alert('BINGO! Você completou toda a cartela!');
+        const audio = new Audio('https://assets.mixkit.co/active_storage/sfx/2013/2013-preview.mp3');
+        audio.play();
+        setTimeout(() => {
+            alert('BINGO! Você completou toda a cartela! 🎉');
+        }, 500);
     }
 }
+
+const audioLink = document.createElement('link');
+audioLink.rel = 'preload';
+audioLink.href = 'https://assets.mixkit.co/active_storage/sfx/2013/2013-preview.mp3';
+audioLink.as = 'audio';
+document.head.appendChild(audioLink);
 
 confirmSelectionBtn.addEventListener('click', () => {
     if (selectedWords.length < 9) {
